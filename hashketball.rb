@@ -149,3 +149,7 @@ def team_names
    value[:team_name]
   end
 end
+
+def player_numbers(team_name)
+  
+end
