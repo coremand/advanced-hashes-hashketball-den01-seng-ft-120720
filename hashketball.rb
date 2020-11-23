@@ -1,3 +1,4 @@
+require 'pry'
 # Write your code below game_hash
 def game_hash
   {
@@ -127,3 +128,23 @@ def game_hash
 end
 
 # Write code here
+def num_points_scored(my_name)
+     game_hash.each{|key,value| value[:players].each{|key_2| return key_2[:points] if key_2[:player_name] == my_name}
+    }
+end
+
+def shoe_size(my_name)
+  game_hash.each{|key,value| value[:players].each{|key_2| return key_2[:shoe] if key_2[:player_name] == my_name}
+    }
+end
+
+def team_colors(my_name)
+  game_hash.each{|key,value| return value[:colors] if value[:team_name] == my_name 
+
+  }
+end
+
+def team_names 
+  
+ }
+end
